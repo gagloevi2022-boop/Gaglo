@@ -1,0 +1,12 @@
+<script>
+    function trigger(feature) {
+        // This 'ios:' prefix is the secret signal 
+        // that tells Hello.dylib to execute the hack
+        window.location.href = "ios:" + feature;
+        
+        // Visual feedback for the user
+        let btn = event.target;
+        btn.style.backgroundColor = "#28a745"; 
+        btn.innerText = feature.toUpperCase() + " ACTIVE";
+    }
+</script>
